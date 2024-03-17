@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="modern-normalize.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    
   </head>
   <body class="main-page">
     <!-- Header -->
@@ -50,8 +51,12 @@
       <section class="hero-img">
         
         <h1 class="hero-heading">Effective Solutions <br> for Your Business</h1>
-        <button class="main-button" class="button" type="button">Order service</button>
-      
+        <button class="main-button" type="button" data-modal-open >Order service</button>
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+            <button class="close-btn" data-modal-close><span class="x-btn">X</span></button>
+          </div>
+        </div>
         
       </section>
       <!-- Section 2 -->
@@ -326,5 +331,6 @@
     <script>
       feather.replace();
     </script>
+    <script src="/modal.js"></script>
   </body>
 </html>
